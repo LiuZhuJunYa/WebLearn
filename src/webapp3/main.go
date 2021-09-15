@@ -9,7 +9,7 @@ import (
 type MyHandler struct{}
 
 func (m *MyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "通过自己创建的处理器来处理请求......", r.URL.Path)
+	fmt.Fprintln(w, "通过详细配置服务器信息来处理请求......", r.URL.Path)
 }
 
 func main() {
